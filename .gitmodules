@@ -4,3 +4,6 @@
 [submodule "lib/openzeppelin-contracts"]
 	path = lib/openzeppelin-contracts
 	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "lib/solidity-interfaces"]
+	path = lib/solidity-interfaces
+	url = https://github.com/thingtheory/solidity-interfaces
