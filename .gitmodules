@@ -7,3 +7,6 @@
 [submodule "lib/solidity-interfaces"]
 	path = lib/solidity-interfaces
 	url = https://github.com/thingtheory/solidity-interfaces
+[submodule "lib/solidity-mocks"]
+	path = lib/solidity-mocks
+	url = https://github.com/thingtheory/solidity-mocks
