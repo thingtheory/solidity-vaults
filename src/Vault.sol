@@ -46,7 +46,6 @@ contract Vault is ERC20, Ownable {
     // y = totalSupply * (x-1)
     // y = totalSupply * (((currentBal + _amount) / currentBal) - 1)
     // y = (totalSupply * ((currentBal + _amount) / currentBal) - totalSupply
-    // mint(y)
     uint256 currentBal = strategy.balance();
     uint256 totalSupply = totalSupply();
     uint256 shares;
@@ -64,7 +63,6 @@ contract Vault is ERC20, Ownable {
 
   function withdraw(uint256 _amount) public {
     require(!paused, "paused");
-    // (1-((375-125)/375))*750
     // x = (totalSupply - _amount) / totalSupply
     // y = currentBal * (1 - x)
     // y = currentBal * (1 - ((totalSupply - _amount) / totalSupply))

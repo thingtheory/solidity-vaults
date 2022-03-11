@@ -5,14 +5,7 @@ import "solidity-mocks/MockMasterChef.sol";
 import "solidity-mocks/MockERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "../Strategy.sol";
-
-interface CheatCodes {
-  function roll(uint256 _incrementBlock) external;
-  function prank(address _caller) external;
-  function expectRevert(bytes calldata) external;
-  function startPrank(address, address) external;
-  function stopPrank() external;
-}
+import "./CheatCodes.sol";
 
 contract MockZap {
   IERC20 inToken;
